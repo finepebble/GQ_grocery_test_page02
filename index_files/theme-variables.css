@@ -1,0 +1,151 @@
+
+@font-face { font-family: "Pretendard"; font-style: normal; font-weight: 400; src: url("/theme-assets/fonts/pretendard/Pretendard-Regular.ttf") format("truetype")}@font-face { font-family: "Pretendard"; font-style: normal; font-weight: 700; src: url("/theme-assets/fonts/pretendard/Pretendard-SemiBold.ttf") format("truetype")}
+
+:root {
+  --intent-primary-50: #fbe5e2;
+  --intent-primary-100: #f6beb7;
+  --intent-primary-200: #f19487;
+  --intent-primary-300: #ec6957;
+  --intent-primary-400: #e84933;
+  --intent-primary-600: #e0240e;
+  --intent-primary-700: #dc1e0b;
+  --intent-primary-800: #d81809;
+  --intent-primary-900: #d10e04;
+  --intent-primary: #E42910;
+
+  --intent-secondary-50: #fafafa;
+  --intent-secondary-100: #f2f2f2;
+  --intent-secondary-200: #eaeaea;
+  --intent-secondary-300: #e2e2e2;
+  --intent-secondary-400: #dcdcdc;
+  --intent-secondary-600: #d1d1d1;
+  --intent-secondary-700: #cbcbcb;
+  --intent-secondary-800: #c5c5c5;
+  --intent-secondary-900: #bbb;
+  --intent-secondary: #d6d6d6;
+
+  --intent-action-50: #e3eee8;
+  --intent-action-100: #bad6c6;
+  --intent-action-200: #8dbba0;
+  --intent-action-300: #60a07a;
+  --intent-action-400: #3e8c5d;
+  --intent-action-600: #186f3a;
+  --intent-action-700: #146432;
+  --intent-action-800: #105a2a;
+  --intent-action-900: #09481c;
+  --intent-action: #1C7841;
+
+  --intent-promotion-50: #fbe5e2;
+  --intent-promotion-100: #f6beb7;
+  --intent-promotion-200: #f19487;
+  --intent-promotion-300: #ec6957;
+  --intent-promotion-400: #e84933;
+  --intent-promotion-600: #e0240e;
+  --intent-promotion-700: #dc1e0b;
+  --intent-promotion-800: #d81809;
+  --intent-promotion-900: #d10e04;
+  --intent-promotion: #E42910;
+
+  --intent-success-50: #e0f3e9;
+  --intent-success-100: #b2e2c9;
+  --intent-success-200: #7fcfa6;
+  --intent-success-300: #4cbb82;
+  --intent-success-400: #26ad67;
+  --intent-success-600: #009745;
+  --intent-success-700: #008d3c;
+  --intent-success-800: #008334;
+  --intent-success-900: #007224;
+  --intent-success: #009F4D;
+
+  --intent-warning-50: #fff2e0;
+  --intent-warning-100: #ffe0b2;
+  --intent-warning-200: #ffcc7f;
+  --intent-warning-300: #ffb84c;
+  --intent-warning-400: #ffa926;
+  --intent-warning-600: #ff9200;
+  --intent-warning-700: #ff8700;
+  --intent-warning-800: #ff7d00;
+  --intent-warning-900: #ff6c00;
+  --intent-warning: #FF9A00;
+
+  --intent-error-50: #fbe5e2;
+  --intent-error-100: #f6beb7;
+  --intent-error-200: #f19487;
+  --intent-error-300: #ec6957;
+  --intent-error-400: #e84933;
+  --intent-error-600: #e0240e;
+  --intent-error-700: #dc1e0b;
+  --intent-error-800: #d81809;
+  --intent-error-900: #d10e04;
+  --intent-error: #E42910;
+
+  --intent-content-50: #e4e4e4;
+  --intent-content-100: #bcbcbc;
+  --intent-content-200: #909090;
+  --intent-content-300: #646464;
+  --intent-content-400: #434343;
+  --intent-content-600: #1e1e1e;
+  --intent-content-700: #181818;
+  --intent-content-800: #141414;
+  --intent-content-900: #0b0b0b;
+  --intent-content: #222222;
+
+  --intent-contrast-50: #fff;
+  --intent-contrast-100: #fff;
+  --intent-contrast-200: #fff;
+  --intent-contrast-300: #fff;
+  --intent-contrast-400: #fff;
+  --intent-contrast-600: #fff;
+  --intent-contrast-700: #fff;
+  --intent-contrast-800: #fff;
+  --intent-contrast-900: #fff;
+  --intent-contrast: #fff;
+
+  /* Pre-calculated contrast colors */
+  --intent-primary-contrast: var(--intent-contrast);
+  --intent-primary-100-contrast: var(--intent-content);
+  --intent-primary-200-contrast: var(--intent-content);
+  --intent-primary-900-contrast: var(--intent-contrast);
+  --intent-secondary-contrast: var(--intent-content);
+  --intent-secondary-100-contrast: var(--intent-content);
+  --intent-secondary-200-contrast: var(--intent-content);
+  --intent-secondary-900-contrast: var(--intent-content);
+  --intent-action-contrast: var(--intent-contrast);
+  --intent-action-100-contrast: var(--intent-content);
+  --intent-action-200-contrast: var(--intent-content);
+  --intent-action-900-contrast: var(--intent-contrast);
+  --intent-promotion-contrast: var(--intent-contrast);
+  --intent-promotion-100-contrast: var(--intent-content);
+  --intent-promotion-200-contrast: var(--intent-content);
+  --intent-promotion-900-contrast: var(--intent-contrast);
+  --intent-success-contrast: var(--intent-contrast);
+  --intent-success-100-contrast: var(--intent-content);
+  --intent-success-200-contrast: var(--intent-content);
+  --intent-success-900-contrast: var(--intent-contrast);
+  --intent-warning-contrast: var(--intent-content);
+  --intent-warning-100-contrast: var(--intent-content);
+  --intent-warning-200-contrast: var(--intent-content);
+  --intent-warning-900-contrast: var(--intent-content);
+  --intent-error-contrast: var(--intent-contrast);
+  --intent-error-100-contrast: var(--intent-content);
+  --intent-error-200-contrast: var(--intent-content);
+  --intent-error-900-contrast: var(--intent-contrast);
+
+  --background-color: #f6f6f6;
+  --border-radius: 0.5714285714285714rem;
+  --font-family: Pretendard, sans-serif;
+  --logo-default-height: 36;
+  --logo-default-width: 92;
+  --logo-emblem-height: 38;
+  --logo-emblem-width: 38;
+  --logo-small-height: 36;
+  --logo-small-width: 92;
+  --typography-error: #a61100;
+  --typography-primary: #a61100;
+  --typography-promotion: #db1600;
+  --coupon-style: var(--typography-promotion);
+  --header-bottom-bar-background-color: var(--intent-contrast);
+  --header-top-bar-background-color: var(--intent-contrast);
+  --header-top-bar-background-color-contrast: var(--intent-content);
+  
+}
